@@ -1,0 +1,406 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8vw 0 0 ;
+    box-shadow: 1px 1px;
+    color: green;
+    z-index: 3;    
+}
+nav .navigation {
+    display: flex;
+   flex-direction: row;
+}   
+nav img{
+    width: 100px;
+    cursor: pointer;
+}
+nav .navigation ul{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav .navigation ul li{
+    list-style: none;              
+    margin-left: 30px;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+     color: rgb(21, 21, 100);
+     font-size: 18px;
+     font-weight: 600;  
+     transition: 0.3s; 
+}
+nav .navigation ul li :hover{
+    cursor: pointer;
+    color: aqua;
+}
+/*HOME*/
+#home{
+background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),
+url("images/birhanu.jpg");
+width: 100%;
+height: 100vh;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+ animation-name:animate ;
+ animation-direction: alternate-reverse;
+ animation-duration: 10s;
+ animation-fill-mode: forwards;
+ animation-iteration-count: infinite;
+ animation-play-state: running;
+ animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+0%{background-image: url("images/birhanu.jpg");}
+20%{background-image: url("images/birhanu.jpg");}
+40%{background-image: url("images/comp1.png");}
+40%{background-image: url("images/comp2.png");}
+60%{background-image: url("images/comp3.png");}
+80%{background-image: url("images/game.png");}
+100%{background-image: url("images/images.jpg");}
+}
+
+ 
+#home h1{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home h2{
+    width: 50%;
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 20px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+}
+#home .btn{
+    margin: top 20px; 
+}
+#home a.blue{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 0.3s;
+}
+#home a.blue:hover {
+    color: rgb(21, 21, 100);
+    background:#fff ;
+}
+#home a.yellow{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 00.3s;
+}
+#home a.yellow:hover {
+    color: rgb(21, 21, 100);
+    background:#fff ;
+}
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top:  50px; 
+}
+#features .fea-box{
+    background-color: #F9F9FF;
+    text-align: start;
+}
+#features .fea-box i{
+    font-size: 3rem;
+    color: rgb(44, 44, 80);
+}
+#features .fea-box h2{
+font-size: 2rem;
+font-weight: 600;
+color: rgb(46, 46, 59);
+padding: 13px 0 7px 0;
+}
+#features .fea-box p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:rgb(70, 70, 87);
+    }
+/*experiance and cost of the work*/
+
+#experiance{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#experiance .experiance-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap: 1rem;
+    margin-top:  50px; 
+}
+#experiance .experiances{
+    text-align: start;
+    background: #F9F9FF;
+    height: 100%;
+    position: relative;
+}
+#experiance .experiances img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#experiance .experiances .details{
+    padding: 15px 15px  0 15px;
+}
+#experiance .experiances .details i{
+   color: #FDC93B ;
+}
+#experiance .experiances .cost{
+    background-color: rgb(74 74 136);
+    color: #fff;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    bottom: 100px;
+}
+
+/* registration*/
+
+#registeration{
+    padding: 6vw 8vw 6vw 8vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5),rgba(81,91,233,0.5)),
+    url("images/signup.png");
+    width: 84%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+#registeration .reminder{
+    color: #fff;
+}
+#registeration .reminder h1{
+    color: #fff;
+}
+#registeration .reminder .time{
+    display: flex;
+    margin-top: 40%;
+}
+#registeration .reminder .time .date{
+    text-align: center;
+    padding: 13px 33px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0,8px,32px,0 rgba(31, 38, 138, 0.37);
+    border-radius: 5px;
+    margin: 0 5px 10px 5px ;
+    border: 2px solid rgba(255,255,255,0.18);
+}
+#registeration .form{
+    background: #fff;
+    display: flex;
+    border: 8px;
+    flex-direction: column;
+  padding: 30px;
+  box-shadow: 0,8px,32px,0 rgba(31, 38, 138, 0.37) ;  
+  margin-right: 300px;
+}
+
+#registeration .form input{
+    margin: 15px 0;
+    padding: 15px 10px;
+    border: 1px solid rgb(84,40,241);
+}
+#registeration .form input::placeholder{
+color: #413c3c;
+font-weight: 500;
+font-size: 0.99rem;
+}
+#registeration .form .btn{
+    margin-top: 20px;
+}
+
+#registeration .form a.blue{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 00.3s;
+}
+#registeration .form a.blue:hover {
+    color: rgb(21, 21, 100);
+    background:green ;
+}
+#experts{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+    background-color: forestgreen;
+}
+#experts .expert-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 1rem;
+    margin-top:  50px; 
+}
+#experts .expert-box .profile{
+    background: #fafaf1;
+    padding: 30px 10px;
+}
+
+#experts .expert-box .profile img{
+    width: 120px;
+    height:120px;
+    border-radius: 1000rem;
+}
+.pro-links{
+    margin-top: 10px;
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(21,21,100);
+    cursor: pointer;
+}
+.pro-links i:hover{
+    background:rgb(21,21,100) ;
+   color: #fff; 
+}
+/*FOOOTER*/
+.footer{
+    padding: 8vw;
+    background-color: #101c32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer .footer-col{
+ padding-bottom: 40px;
+}
+.footer h3{
+    color: rgb(241,240,245);
+}
+.footer li{
+    list-style: none;
+    color: #7b838a;
+    padding: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 00.3s;
+}
+.footer li:hover{
+    color: rgb(241,240,245);
+}
+.footer p{
+    color: #7b838a;
+}
+.footer .subscrib{
+margin-top: 20px;
+}
+.footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #334f6c;
+    border: none;
+    outline: none;
+   color: #fff;
+}
+
+
+
+ .footer .subscrib a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 12px 15px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 00.3s;
+}
+ .footer .subscrib a.blue{
+    color: #fff;
+    background: rgb(21, 21, 100);
+    transition: 00.3s;
+}
+.footer .subscrib a.blue:hover {
+    color: rgb(21, 21, 100);
+    background:#fff ;
+}
+.footer .copy-right{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.footer .copy-right p{
+    color: #fff;
+
+}
+.footer .copy-right .pro-links{
+    margin-top: 0px;
+}
+.footer .copy-right .pro-links i{
+    background-color: #5f7185;
+    color: #fff;
+}
+.footer .copy-right .prolinks i:hover{
+    border: 1px solid rgb(21, 21, 100);
+    color: #fff;
+    border: 1px solid rgb(21, 21, 100);
+    cursor: pointer;
+}
+@media(max-width:769px){
+    #registeration {
+      
+        width: 460;
+       
+    }
+    #registeration{
+        width: 54%;
+    }
+    #registeration .form {
+        margin-right: 200px;
+    }
+    .footer input{
+        width: 120px;
+        padding: 12px 10px;
+       
+    }
+
+}
